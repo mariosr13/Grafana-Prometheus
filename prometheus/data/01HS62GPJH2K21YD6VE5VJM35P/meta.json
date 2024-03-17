@@ -1,0 +1,17 @@
+{
+	"ulid": "01HS62GPJH2K21YD6VE5VJM35P",
+	"minTime": 1710532802487,
+	"maxTime": 1710540000000,
+	"stats": {
+		"numSamples": 28585,
+		"numSeries": 1906,
+		"numChunks": 1906
+	},
+	"compaction": {
+		"level": 1,
+		"sources": [
+			"01HS62GPJH2K21YD6VE5VJM35P"
+		]
+	},
+	"version": 1
+}

@@ -1,0 +1,17 @@
+{
+	"ulid": "01HS62GPHAT134DAAA3S55SJK9",
+	"minTime": 1710527983961,
+	"maxTime": 1710532800000,
+	"stats": {
+		"numSamples": 97343,
+		"numSeries": 2016,
+		"numChunks": 2506
+	},
+	"compaction": {
+		"level": 1,
+		"sources": [
+			"01HS62GPHAT134DAAA3S55SJK9"
+		]
+	},
+	"version": 1
+}
