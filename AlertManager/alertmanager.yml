@@ -1,1 +1,24 @@
+global:
+  resolve_timeout: 5m
+
+route:
+  group_by: ['alertname']
+  group_wait: 30s
+  group_interval: 5m
+  repeat_interval: 1h
+  receiver: 'teams'
+
+receivers:
+- name: 'teams'
+  webhook_configs:
+  - url: 'https://pruebasaluuclm.webhook.office.com/webhookb2/c8a0a86e-dd4e-499c-898d-f82a80d58e5c@c42cbae6-61f4-498c-9107-6a8cf5f01e56/IncomingWebhook/0506981f21f54217920ac1d1173b2f9a/e3c3b4d7-4ecb-4024-ab32-9ee004e9d3a4'
+    send_resolved: true
+
+inhibit_rules:
+  - source_match:
+      severity: 'critical'
+    target_match:
+      severity: 'warning'
+    equal: ['alertname', 'dev', 'instance']
+
 
